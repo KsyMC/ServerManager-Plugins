@@ -1,6 +1,7 @@
 {
   "name": "Cameraman",
   "version": "1.0",
+  "sm-version": 15,
   "website": "http://chalk.pe",
   "description": "An automatic motion control plugin for PocketMine-MP",
   "authors": [

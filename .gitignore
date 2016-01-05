@@ -16,6 +16,7 @@ src/
 .project
 ant.properties
 minecraftpe/
+servermanager/
 
 *.bat
 
