@@ -1,0 +1,20 @@
+{
+  "name": "Cameraman",
+  "version": "1.0",
+  "website": "http://chalk.pe",
+  "description": "An automatic motion control plugin for PocketMine-MP",
+  "authors": [
+    "ChalkPE",
+    "KsyMC"
+  ],
+  "commands": {
+    "camera": {
+      "description": "Manage your movement by Cameraman",
+      "usage": "/camera or /cam",
+      "aliases": [
+        "cam",
+        "p"
+      ]
+    }
+  }
+}
