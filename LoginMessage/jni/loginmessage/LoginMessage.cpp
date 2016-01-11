@@ -4,6 +4,13 @@
 #include "servermanager/level/SMLevel.h"
 #include "servermanager/event/player/PlayerJoinEvent.h"
 #include "servermanager/plugin/PluginManager.h"
+#include "minecraftpe/item/ItemInstance.h"
+#include "log.h"
+
+std::string LoginMessage::getPluginDescription() const
+{
+	return "LoginMessage.json";
+}
 
 void LoginMessage::onEnable()
 {
@@ -14,12 +21,7 @@ void LoginMessage::onPlayerJoin(PlayerJoinEvent &event)
 {
 	SMPlayer *joinedPlayer = event.getPlayer();
 
-	for(SMPlayer *player : getServer()->getLevel()->getPlayers())
+	for(SMPlayer *player : getServer()->getOnlinePlayers())
 		if(player->isLocalPlayer() || getServer()->isOp(player->getName()))
 			player->sendMessage("[LoginMessage] §e" + joinedPlayer->getDisplayName() + "'s IP: " + joinedPlayer->getAddress());
-}
-
-std::string LoginMessage::getPluginDescription() const
-{
-	return "LoginMessage.json";
 }

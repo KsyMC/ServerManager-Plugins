@@ -5,12 +5,12 @@
 
 class PlayerJoinEvent;
 
+
 class LoginMessage : public PluginBase, public Listener
 {
 public:
-	void onEnable();
-
-	void onPlayerJoin(PlayerJoinEvent &);
-
 	std::string getPluginDescription() const;
+
+	void onEnable();
+	void onPlayerJoin(PlayerJoinEvent &event);
 };
