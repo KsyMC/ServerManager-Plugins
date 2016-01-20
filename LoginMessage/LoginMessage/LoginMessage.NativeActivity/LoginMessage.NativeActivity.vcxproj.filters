@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="loginmessage\LoginMessage.cpp">
+      <Filter>loginmessage</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="loginmessage">
+      <UniqueIdentifier>{28d2d81c-662f-480c-9afb-1ec603e748c6}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="loginmessage\LoginMessage.h">
+      <Filter>loginmessage</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
